@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {  HashRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Component/navbar";
 import Footer from "./Component/footer";
 import WhatsapFixed from "./Component/whatsapFixed";
@@ -8,7 +8,7 @@ import { Home, Portofolio, Harga } from "./pages/indexPageRouter";
 function App() {
   return (
     <>
-      <Router>
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -17,7 +17,7 @@ function App() {
         </Routes>
         <WhatsapFixed />
         <Footer />
-      </Router>
+      </HashRouter>
     </>
   );
 }
